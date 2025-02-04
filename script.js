@@ -97,8 +97,6 @@ function goCave() {
   update(locations[2]);
 }
 
-function fightDragon() {}
-
 // initialize buttons
 button1.onclick = goStore;
 button2.onclick = goCave;
@@ -146,6 +144,17 @@ function sellWeapon() {
     text.innerText = "Don't sell your only weapon!";
   }
 }
-function fightSlime() {}
+function fightSlime() {
+  fight = 0;
+  goFight();
+}
 
-function fightBeast() {}
+function fightBeast() {
+  fight = 1;
+  goFight();
+}
+
+function fightDragon() {
+  fight = 2;
+  goFight();
+}
