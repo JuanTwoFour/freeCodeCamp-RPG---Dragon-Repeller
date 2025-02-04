@@ -36,8 +36,8 @@ const locations = [
     name: "cave",
     "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
     "button functions": [fightSlime, fightBeast, goTown],
-    text: "You enter the cave. You see some monsters."
-  }
+    text: "You enter the cave. You see some monsters.",
+  },
 ];
 
 function update(location) {
@@ -55,7 +55,7 @@ function goTown() {
 }
 
 function goStore() {
- update(locations[1]);
+  update(locations[1]);
 }
 
 function goCave() {
@@ -70,7 +70,8 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 function buyHealth() {
-  gold = gold - 10;
+  gold -= 10;
+  health += 10;
 }
 
 function buyWeapon() {}
