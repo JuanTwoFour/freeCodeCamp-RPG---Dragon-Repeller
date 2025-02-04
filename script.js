@@ -165,5 +165,13 @@ function fightDragon() {
   goFight();
 }
 
+function goFight() {
+  update(locations[3]);
+  monsterHealth = monsters[fighting].health;
+  monsterStats.computedStyleMap.display = "block";
+  monsterName.innerText = monsters[fighting].name;
+  monsterHealth.innerText = monsterHealth;
+}
+
 function attack() {}
 function dodge() {}
