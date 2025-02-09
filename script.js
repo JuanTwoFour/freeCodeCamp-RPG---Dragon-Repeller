@@ -218,6 +218,10 @@ function attack() {
     } else {
       defeatMonster();
     }
+    if (Math.random() <= 0.1) {
+      text.innerText += " Your " + inventory.pop() + " breaks.";
+      return text;
+    }
   }
 }
 
